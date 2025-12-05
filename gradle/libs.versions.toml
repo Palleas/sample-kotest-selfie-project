@@ -1,0 +1,17 @@
+[versions]
+kotest-version = "6.0.7"
+selfie-snapshot-version = "2.5.5"
+
+[libraries]
+kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest-version"}
+kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest-version" }
+selfie-kotest = { module = "com.diffplug.selfie:selfie-runner-kotest", version.ref = "selfie-snapshot-version" }
+
+[bundles]
+kotest = [
+    "kotest-assertions-core",
+    "kotest-runner-junit5"
+]
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.2.20" }
