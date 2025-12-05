@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY . .
 
-RUN ./gradlew test 
+RUN ./gradlew test
